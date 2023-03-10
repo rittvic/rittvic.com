@@ -1,6 +1,5 @@
 import "bootstrap/dist/js/bootstrap.min.js";
 import "jquery/dist/jquery.slim.min.js";
-import resumeURL from "../assets/resume.pdf";
 
 function toggleThemeMode() {
   // If currently in dark mode, switch to light mode. otherwise, dark mode.
@@ -49,8 +48,6 @@ if (localStorage.getItem("theme") === "light") {
 } else {
   setThemeIcon("dark");
 }
-
-document.querySelector("#resume-link").href = resumeURL;
 
 // Set up event listeners
 window.addEventListener("load", () => {
